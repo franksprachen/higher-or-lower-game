@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Higher or lower game</string>
+    <string name="higher_or_lower_game">Higher or lower game</string>
+    <string name="restart">Restart</string>
+    <string name="guess">Guess</string>
+    <string name="type_a_number">Type a number</string>
+</resources>

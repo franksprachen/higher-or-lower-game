@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/guessButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="25dp"
+        android:background="#111111"
+        android:fontFamily="@font/ubuntu"
+        android:onClick="guessNumber"
+        android:text="@string/guess"
+        app:layout_constraintBottom_toTopOf="@+id/restartButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessedNumberEditText" />
+
+    <EditText
+        android:id="@+id/guessedNumberEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="49dp"
+        android:ems="10"
+        android:fontFamily="@font/ubuntu"
+        android:hint="@string/type_a_number"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#EBF4FA"
+        android:textColorHint="#EBF4FA"
+        app:layout_constraintBottom_toTopOf="@+id/guessButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appNameText"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/restartButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="262dp"
+        android:background="#111111"
+        android:fontFamily="@font/ubuntu"
+        android:onClick="restartGame"
+        android:text="@string/restart"
+        android:textColor="#EBF4FA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessButton" />
+
+    <TextView
+        android:id="@+id/appNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="59dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="@string/higher_or_lower_game"
+        android:textColor="#EBF4FA"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/guessedNumberEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
